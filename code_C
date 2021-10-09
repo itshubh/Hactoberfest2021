@@ -1,0 +1,22 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    long long n;
+    cin >> n;
+    if(n<0)
+    {
+        int n1= n/10;
+        int n2= n/100;
+        int r= n%10;
+        n2=n2*10+r;
+        if(n1>n2)
+        cout<<n1;
+        else
+        cout << n2;
+    }
+    else
+    cout << n;
+    return 0;
+}
